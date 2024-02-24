@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from "next/link"
 
-import { Button } from '@/components/Clients'
+import { LogOutButton, UsersButton } from '@/components/Clients'
 
 const header = () => {
   return (
@@ -14,7 +14,8 @@ const header = () => {
 <Link href={"/"}>Home</Link>
 <Link href={"/profile"}> Profile</Link>
 
-<Button/>
+<LogOutButton/>
+
 
       </article>
     </div>

@@ -16,12 +16,12 @@ const TaskSchema=new mongoose.Schema({
         default:false,
 
     },
-    // user:{
-    //     type:mongoose.Schema.Types.ObjectId,
-    //     required:true,
-    //     ref:"User",
+    user:{
+        type:mongoose.Schema.Types.ObjectId,
+        required:true,
+        ref:"User",
 
-    // }
+    },
     
     createAt:{
         type:Date,

@@ -10,7 +10,7 @@ export const TodoItem = ({title,description,completed,id}) => {
             <h4>{title}</h4>
             <p>{description}</p>
         </div>
-      <div> <TodoButton completed={completed}/></div>
+      <div> <TodoButton completed={completed} id={id}/></div>
     </div>
   )
 }

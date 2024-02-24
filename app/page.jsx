@@ -5,20 +5,21 @@
 import React from 'react'
 import Form from "./addTodoForm"
 import { TodoItem } from '@/components/ServerComponents'
-
+import dotenv from "dotenv"
+import { UsersButton } from '@/components/Clients'
+import Todos from './todos'
+dotenv.config({ path: ".env.local" })
 const page = () => {
   return (
-  <div className="container">
-<Form/>
-<section className='todoContainer'></section>
-<TodoItem 
-title={"Sample Task "}
- description={"Play hard "}
- completed={true}
- id="sample"
- />
-
-  </div>
+    <>
+      <div className="container">
+      <UsersButton />
+        <Form />
+        <section className="todoContainer"></section>
+       
+        <Todos/>
+      </div>
+    </>
   )
 }
 
